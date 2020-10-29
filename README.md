@@ -38,6 +38,10 @@ Then, the program will wait for the FlightGear simulator to connect to the data 
 Click on the 'Fly!' button in the FlightGear simulator and wait for the simulator to connect and the GUI to load.<br />
 When the interpreter will start to interpret the script, the plane will take off and fly.
 
+#### NOTE:
+We used a virtual machine to get the Linux environment. Thus, the IP that appears in the [script](https://github.com/YamitCohenTsedek/flight-simulator-interpreter/blob/main/Script.txt) next to the connect command is 10.0.2.2, which is the IP of the virtual machine.<br />
+If you do not run the code from a virtual machine, you should change the IP in the script.<br /><br />
+
 ## Watch on YouTube:
 
 [![](https://user-images.githubusercontent.com/45918740/97620839-c28e8200-1a2a-11eb-91e7-c43f44122d9f.JPG)](https://www.youtube.com/watch?v=YGbEjnZf9i4)
