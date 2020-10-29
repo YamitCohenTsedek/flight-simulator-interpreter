@@ -21,8 +21,8 @@ Open the FlightGear simulator and add the following settings in the "Settings" t
 ```
 
 ```--telnet=socket,in,10,127.0.0.1,5402,tcp``` tells the simulator to open in the background a server that any telnet client can connect to it.
-The server is established on a socket with the ip 127.0.0.1 (i.e. local host - on the same computer), and the port 5402, and it will read the data at a rate of 10 times per second, over tcp/ip protocol. ```--httpd=8080``` will open a web server on port 8080.<br />  
-```--generic=socket,out,10,127.0.0.1,5400,tcp,generic_small``` tells the simulator to connect as a client to the server through a socket with the ip 127.0.0.1 and the port 5400, and it will send data at a rate of 10 times per second by the format of generic_small.xml file. We will need to open our server before opening the simulator, so that it can connect to it as a client.<br />
+The server is established on a socket with the IP 127.0.0.1 (i.e. local host - on the same computer), and the port 5402, and it will read the data at a rate of 10 times per second, over TCP/IP protocol. ```--httpd=8080``` will open a web server on port 8080.<br />  
+```--generic=socket,out,10,127.0.0.1,5400,tcp,generic_small``` tells the simulator to connect as a client to the server through a socket with the IP 127.0.0.1 and the port 5400, and it will send data at a rate of 10 times per second by the format of generic_small.xml file. We will need to open our server before opening the simulator, so that it can connect to it as a client.<br />
 The simulator will send at a rate of 10 times per second the sampled values, separated by a comma just like in CSV (and in the order defined in generic_small.xml).<br /><br />
 
 To compile the code, open a terminal, route to the directory where you downloaded the code and run the following command:
@@ -36,4 +36,8 @@ To run the code, run the following command:
 Then, the program will wait for the FlightGear simulator to connect to the data server.<br />
 
 Click on the 'Fly!' button in the FlightGear simulator and wait for the simulator to connect and the GUI to load.<br />
-When the interpreter will start to interpret the script, the plane will takeoff and fly.
+When the interpreter will start to interpret the script, the plane will take off and fly.
+
+## Watch on YouTube:
+
+[![](https://user-images.githubusercontent.com/45918740/97620839-c28e8200-1a2a-11eb-91e7-c43f44122d9f.JPG)](https://www.youtube.com/watch?v=YGbEjnZf9i4)
