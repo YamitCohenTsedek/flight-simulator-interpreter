@@ -1,7 +1,7 @@
 # flight-simulator-interpreter
 
 Implementation of an interpreter for the FlightGear simulator (for more details about the FlightGear simulator click [here](https://www.flightgear.org/about/)).<br />
-The program gets a script file that contains various commands. By using a [lexer](https://en.wikipedia.org/wiki/Lexical_analysis), the program splits the script into strings that can be interpreted, and then interpret them by using an [interpreter](https://en.wikipedia.org/wiki/Interpreter_(computing)), with the help of the [Command design pattern](https://en.wikipedia.org/wiki/Command_pattern).<br />
+The program gets a script file that contains various commands. By using a [lexer](https://en.wikipedia.org/wiki/Lexical_analysis), the program splits the script into strings that can be interpreted, and then interprets them by using an [interpreter](https://en.wikipedia.org/wiki/Interpreter_(computing)), with the help of the [Command design pattern](https://en.wikipedia.org/wiki/Command_pattern).<br />
 
 ### The project contains the following elements:<br />
 
@@ -25,11 +25,11 @@ The server is established on a socket with the IP 127.0.0.1 (i.e. local host - o
 ```--generic=socket,out,10,127.0.0.1,5400,tcp,generic_small``` tells the simulator to connect as a client to the server through a socket with the IP 127.0.0.1 and the port 5400, and it will send data at a rate of 10 times per second by the format of generic_small.xml file. We will need to open our server before opening the simulator, so that it can connect to it as a client.<br />
 The simulator will send at a rate of 10 times per second the sampled values, separated by a comma just like in CSV (and in the order defined in generic_small.xml).<br /><br />
 
-To compile the code, open a terminal, route to the directory where you downloaded the code and run the following command:
+To **compile** the code, open a terminal, route to the directory where you downloaded the code and run the following command:
 ```
 g++ -std=c++11 *.cpp -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -o a.out -pthread
 ```
-To run the code, run the following command:
+To **run** the code, run the following command:
 ```
 ./a.out Script.txt 
 ```
